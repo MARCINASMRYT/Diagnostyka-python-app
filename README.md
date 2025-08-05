@@ -1,0 +1,1 @@
+# Diagnostyka-python-app
