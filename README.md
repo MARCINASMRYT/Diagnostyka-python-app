@@ -2,7 +2,7 @@
 
 ![Zrzut ekranu działania aplikacji](screenshot.png)
 
-> Zaawansowane narzędzie diagnostyczne dla systemu Windows z obsługą wersji Premium (RSA + podpis cyfrowy)
+> Zaawansowane narzędzie diagnostyczne dla systemu Windows
 
 ## 📦 Opis projektu
 
