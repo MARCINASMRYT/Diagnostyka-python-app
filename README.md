@@ -36,7 +36,7 @@
    - `2` – Odblokowuje Premium
    - `3` – Zamyka aplikację
 
-> **Uwaga:** O klucz Premium można zapytać się właściciela .
+> **Uwaga:** O klucz Premium można zapytać się właściciela.
 
 ---
 
