@@ -6,7 +6,7 @@
 
 ## 📦 Opis projektu
 
-`diagnostyka.py` to interaktywny skrypt stworzony w Pythonie, który umożliwia użytkownikowi szybkie przeskanowanie systemu Windows, wykrycie problemów, oraz opcjonalne zapisanie wyników do pliku. Projekt zawiera także mechanizm weryfikacji Premium oparty na szyfrowaniu RSA i podpisach cyfrowych.
+`diagnostyka.py` to interaktywny skrypt stworzony w Pythonie, który umożliwia użytkownikowi szybkie przeskanowanie systemu Windows, wykrycie problemów, oraz opcjonalne zapisanie wyników do pliku.
 
 ---
 
