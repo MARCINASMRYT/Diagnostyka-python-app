@@ -15,7 +15,6 @@
 - ✅ Diagnostyka systemu operacyjnego (komendy `ver`, `wmic`, `sfc`)
 - ✅ Skanowanie i analiza sterowników (`pnputil /enum-drivers`)
 - ✅ Zapis wyników do pliku `.txt`
-- ✅ Obsługa klucza Premium podpisanego RSA (funkcje Premium)
 - ✅ Prosty interfejs tekstowy (CLI)
 
 ---
@@ -34,25 +33,10 @@
 
 3. **Korzystaj z menu:**
    - `1` – Uruchamia diagnostykę
-   - `2` – Odblokowuje Premium (jeśli masz podpisany klucz)
+   - `2` – Odblokowuje Premium
    - `3` – Zamyka aplikację
 
-> **Uwaga:** funkcje Premium (np. zapisywanie wyników do pliku) są dostępne dopiero po poprawnej weryfikacji klucza podpisanego podpisem RSA.
-
----
-
-## 🔐 Wersja Premium
-
-Aby odblokować Premium:
-
-1. Wygeneruj parę kluczy RSA (publiczny + prywatny)
-2. W pliku `diagnostyka.py` umieść publiczny klucz RSA w zmiennej `PUBLIC_KEY_PEM`
-3. Wygeneruj podpis `.sig` dla kodu użytkownika (np. w `generator.py`)
-4. Dołącz do użytkownika:
-   - `diagnostyka.py`
-   - `premium.sig`
-
-Po wpisaniu poprawnego kodu z podpisem — Premium zostanie aktywowane.
+> **Uwaga:** O klucz Premium można zapytać się właściciela .
 
 ---
 
@@ -61,17 +45,9 @@ Po wpisaniu poprawnego kodu z podpisem — Premium zostanie aktywowane.
 ```
 📁 diagnostyka/
 ├── diagnostyka.py         # Główny skrypt
-├── generator.py           # Skrypt do generowania podpisów
-├── premium.sig            # Podpisany plik klucza
 ├── README.md              # Ten plik
 ├── screenshot.png         # Zrzut ekranu (jeśli chcesz)
 ```
-
----
-
-## 🖼 Zrzut ekranu
-
-Umieść obrazek `screenshot.png` w katalogu repozytorium, aby został wyświetlony powyżej.
 
 ---
 
@@ -92,6 +68,4 @@ Projekt dostępny na licencji MIT – możesz używać, modyfikować i rozpowsze
 
 ## 👤 Autor
 
-Projekt stworzony przez **[Twoje Imię lub Nick z GitHuba]**
-
-Chcesz pomóc? Zgłoś issue lub stwórz pull request 🙌
+Projekt stworzony przez **MARCINASMRYT**
