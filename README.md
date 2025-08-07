@@ -1,55 +1,52 @@
-# 🛠️ Diagnostyka Systemu Windows (Python)
+\# Diagnostyka Systemu - narzędzie diagnostyczne w Python
 
-**Aplikacja konsolowa** do przeprowadzenia szybkiej diagnostyki systemu Windows — sprawdza:
 
-- podstawowe informacje o systemie,
-- brakujące lub uszkodzone sterowniki (za pomocą `pnputil`),
-- integralność plików systemowych (`sfc /scannow`),
-- zapisuje wynik do pliku tekstowego `diagnostyka_wynik.txt`.
 
----
+!\[Diagnostyka Systemu](screenshot.png)
 
-## 📁 Zawartość projektu
 
-- `diagnostyka.py` – główny skrypt diagnostyczny.
-- `diagnostyka_wynik.txt` – plik tworzony automatycznie z wynikami po uruchomieniu.
 
----
+\## Opis
 
-## ⚙️ Wymagania
 
-- Windows 10 / 11  
-- Python 3.x zainstalowany w systemie  
-- Uprawnienia administratora  
 
----
+`diagnostyka.py` to zaawansowane narzędzie diagnostyczne napisane w Pythonie, służące do analizy stanu systemu Windows. Skrypt wykonuje szereg poleceń systemowych, takich jak `sfc /scannow` oraz `pnputil /enum-drivers`, aby zidentyfikować potencjalne problemy, błędy oraz niezgodności w sterownikach i systemie operacyjnym.
 
-## 🚀 Instrukcja uruchomienia
 
-### ✅ PowerShell
 
-1. Kliknij Start → wpisz `PowerShell`  
-2. Kliknij prawym → **Uruchom jako administrator**  
-3. Przejdź do folderu aplikacji:
-   ```powershell
-   cd "C:\ścieżka\do\folderu"
-   ```
-4. Uruchom skrypt:
-   ```powershell
-   python .\diagnostyka.py
-   ```
+\### Kluczowe funkcje:
 
----
 
-## 📄 Wynik
 
-Po zakończeniu działania, program:
+\- Skanowanie i raportowanie informacji o systemie oraz sterownikach
 
-- otwiera automatycznie plik `diagnostyka_wynik.txt`  
-- zawiera wszystkie informacje i znalezione błędy (jeśli są)
+\- Automatyczne wykrywanie i wyświetlanie wyników polecenia `sfc /scannow`
 
----
+\- Obsługa wersji Premium z dodatkowymi opcjami konfiguracyjnymi
 
-## 🛡️ Ważne
+\- Bezpieczne odblokowanie wersji Premium za pomocą podpisanego klucza RSA
 
-> ⚠️ Program **musi być uruchomiony jako administrator**, inaczej zakończy się komunikatem o błędzie.
+\- Zapis wyników skanowania do pliku tekstowego (opcjonalnie)
+
+
+
+\## Wymagania
+
+
+
+\- Python 3.7 lub nowszy
+
+\- System Windows (wymagane uprawnienia administratora)
+
+\- Biblioteka `cryptography` do weryfikacji podpisów RSA
+
+
+
+\### Instalacja biblioteki
+
+
+
+```bash
+
+pip install cryptography
+
