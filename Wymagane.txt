@@ -1,0 +1,11 @@
+1. Pobierz Python jeśli nie masz (Wymagane)
+-> https://www.python.org/downloads/release/python-3136/ (Klikasz Windows installer 64-bit)
+===========================================================================================================================================
+2. Pobieranie bibliotek cryptography (Wymagane)
+-> Wchodzisz w Windows Power Shell (Jako administrator)
+ -> Piszesz: pip install cryptography postępujesz zgodnie z instrukcjami i gotowe.
+===========================================================================================================================================
+1. Sposób odpalenia
+-> Klikasz u góry w folderze koło wyszukiwania: > Pobrane > diagnostyka_app i kopiujesz ścieszkę
+ -> Odpalasz Windows Power Shell (Jako administrator) wpisujesz: cd C:\Users\(Nazwa)\Downloads\diagnostyka_app Wklejasz ścieszkę i Enter…
+  -> Wpisujesz python diagnostyka.py i gotowe powodzenia!
